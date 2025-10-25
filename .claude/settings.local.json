@@ -2,7 +2,16 @@
   "permissions": {
     "allow": [
       "Bash(git log:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(dir /b)",
+      "Bash(pip --version:*)",
+      "Bash(pip install:*)",
+      "Bash(python src/parse_export.py:*)",
+      "Bash(python:*)",
+      "Bash(iconv:*)",
+      "Bash(awk:*)",
+      "Bash(echo \"  • AI Extraction: $0.09\")",
+      "Bash(echo:*)"
     ],
     "deny": [],
     "ask": []
