@@ -1,0 +1,70 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
+
+# Output directories
+out_csv/
+out_db/
+media_organized/
+logs/
+*.log
+
+# Telegram export (large files)
+MasajidChat/photos/
+MasajidChat/video_files/
+MasajidChat/voice_messages/
+MasajidChat/files/*.JPG
+MasajidChat/files/*.jpg
+MasajidChat/files/*.jpeg
+MasajidChat/files/*.png
+MasajidChat/files/*.mp4
+
+# Keep structure but ignore large media
+!.gitkeep
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Sensitive
+.env
+credentials.json
+config.local.py
+# keep folders, ignore their contents
+MasajidChat/**
+!MasajidChat/.gitkeep
+!MasajidChat/README.md
+
+out_db/**
+!out_db/.gitkeep
+!out_db/README.md
+
+out_csv/**
+!out_csv/.gitkeep
+!out_csv/README.md
+
+media_organized/**
+!media_organized/.gitkeep
+!media_organized/README.md
+
+logs/**
+!logs/.gitkeep
+!logs/README.md
