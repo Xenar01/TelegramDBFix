@@ -1,25 +1,57 @@
-# 🕌 Telegram Mosque Database ETL
+# 🕌 قاعدة بيانات مشروع إعادة إعمار المساجد
+## Mosque Reconstruction Database ETL
 
-**Mosque Reconstruction Project (مشروع إعادة إعمار المساجد)**
+**مشروع إعادة إعمار المساجد في سوريا**
 
-Extract, transform, and load mosque damage data from Telegram group exports into a structured database for reconstruction planning, GIS visualization, and donation platforms.
-
----
-
-## 📋 Project Overview
-
-This project processes exported Telegram group data containing mosque reconstruction information from multiple Syrian provinces. The data includes:
-
-- **Excel files** with lists of damaged and demolished mosques
-- **Photos** of mosque damage
-- **Text descriptions** with mosque names and locations
-- **Google Maps links** for geolocation
-
-The ETL pipeline transforms this semi-structured data into clean CSV files and optionally imports it into PostgreSQL for advanced querying and integration with other systems.
+نظام لاستخراج وتحويل وتحميل بيانات المساجد المتضررة والمدمرة من مجموعات تيليجرام إلى قاعدة بيانات منظمة لتسهيل التخطيط لإعادة الإعمار، إنشاء الخرائط، ومنصات التبرعات.
 
 ---
 
-## 🏗 Architecture
+## 📋 نظرة عامة | Project Overview
+
+### ما هو هذا المشروع؟
+
+هذا المشروع يعالج البيانات المُصدّرة من مجموعة تيليجرام "مشروع إعادة إعمار المساجد 🕌" والتي تحتوي على معلومات المساجد من عدة محافظات سورية. البيانات تشمل:
+
+- **ملفات Excel** تحتوي على قوائم المساجد المتضررة والمدمرة
+- **صور** توثّق أضرار المساجد
+- **أوصاف نصية** بأسماء المساجد ومواقعها
+- **روابط خرائط Google Maps** لتحديد المواقع الجغرافية
+
+البرنامج يحوّل هذه البيانات شبه المنظمة إلى ملفات CSV نظيفة ويمكن استيرادها اختيارياً إلى قاعدة بيانات PostgreSQL للاستعلام المتقدم والتكامل مع أنظمة أخرى.
+
+---
+
+## 🎯 ملخص للزملاء: كيف تبدأ؟ | Quick Summary for Colleagues
+
+### خطوات البدء السريعة (3 خطوات فقط!)
+
+#### 1️⃣ حمّل المشروع
+```bash
+git clone https://github.com/Xenar01/TelegramDBFix.git
+cd TelegramDBFix
+pip install -r requirements.txt
+```
+
+#### 2️⃣ صدّر بيانات التيليجرام
+- افتح **Telegram Desktop**
+- اذهب لمجموعة **"مشروع إعادة إعمار المساجد 🕌"**
+- اضغط **⋮** ← **Export chat history**
+- اختر **JSON** + **Photos** + **Files**
+- انسخ المجلد المُصدَّر إلى `MasajidChat/`
+
+#### 3️⃣ شغّل البرنامج
+```bash
+python src/parse_export.py
+```
+
+**النتيجة:**
+- ✅ ملفات CSV جاهزة في `out_csv/`
+- ✅ صور منظمة في `media_organized/`
+
+---
+
+## 🏗 البنية التقنية | Architecture
 
 ```
 Telegram Export (JSON + Media)
@@ -59,136 +91,197 @@ Future: Dashboards, GIS Maps, Donation Platforms
 
 ---
 
-## 🚀 Quick Start
+## 🚀 البداية السريعة | Quick Start
 
-### 1. Prerequisites
+### ✅ المتطلبات الأساسية | Prerequisites
 
-- Python 3.8+
-- (Optional) PostgreSQL 12+
-- Telegram Desktop export data
+قبل البدء، تأكد من توفر:
+- Python 3.8+ (برنامج بايثون)
+- Telegram Desktop (تطبيق تيليجرام لسطح المكتب)
+- PostgreSQL 12+ (اختياري - لقاعدة البيانات المتقدمة)
 
-### 2. Installation
+---
+
+### 📥 الخطوة 1: تحميل المشروع | Download Project
 
 ```bash
-# Clone or navigate to project
+# استنساخ المشروع من GitHub
+git clone https://github.com/Xenar01/TelegramDBFix.git
 cd TelegramDBFix
 
-# Install dependencies
+# تثبيت المكتبات المطلوبة
 pip install -r requirements.txt
-
-# Copy environment template (if using PostgreSQL)
-cp .env.example .env
-# Edit .env with your database credentials
-```
-
-### 3. Run ETL Pipeline
-
-```bash
-# Parse Telegram export and generate CSV files
-python src/parse_export.py
-
-# With custom paths
-python src/parse_export.py --export-path MasajidChat --output-dir out_csv
-
-# Skip media organization (faster)
-python src/parse_export.py --no-media
-```
-
-### 4. Import to PostgreSQL (Optional)
-
-```bash
-# Create database
-createdb mosques
-
-# Import data
-python src/import_to_postgres.py
-
-# Skip schema creation if already exists
-python src/import_to_postgres.py --no-schema
 ```
 
 ---
 
-## 👥 Team Collaboration Setup
+### 📤 الخطوة 2: تصدير بيانات التيليجرام | Export Telegram Data
 
-### For New Team Members
+**مهم جداً**: كل عضو في الفريق يحتاج لتصدير بيانات المجموعة محلياً على جهازه.
 
-This repository is designed for multiple team members to work with Telegram export data **without committing large files** to GitHub.
+#### خطوات التصدير:
 
-#### Step 1: Clone the Repository
+1. افتح **Telegram Desktop** (تطبيق تيليجرام لسطح المكتب)
+2. انتقل إلى مجموعة: **"مشروع إعادة إعمار المساجد 🕌"**
+3. اضغط على **⋮** (ثلاث نقاط) ← **Export chat history** (تصدير سجل المحادثة)
+4. اختر الإعدادات التالية:
+   - **Format**: JSON
+   - **Include**:
+     - ✅ Photos (الصور)
+     - ✅ Files (الملفات - ملفات Excel)
+     - ⬜ Videos (اختياري)
+     - ⬜ Voice messages (اختياري)
+5. احفظ التصدير
 
-```bash
-git clone https://github.com/Xenar01/TelegramDBFix.git
-cd TelegramDBFix
-```
+6. **انسخ المجلد المُصدَّر** إلى مجلد `MasajidChat/` داخل المشروع
 
-#### Step 2: Install Dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-#### Step 3: Export Telegram Chat Data
-
-**Important:** Each team member needs to export the Telegram group data locally.
-
-1. Open **Telegram Desktop**
-2. Navigate to the mosque reconstruction group: **"مشروع إعادة إعمار المساجد 🕌"**
-3. Click **⋮** (three dots) → **Export chat history**
-4. Configure export:
-   - Format: **JSON**
-   - Include: **Photos**, **Files** (Excel), optionally Videos/Voice
-5. Save the export
-6. **Copy the exported files** into the `MasajidChat/` folder in your cloned repository
-
-Your `MasajidChat/` folder should contain:
+#### البنية المطلوبة:
 ```
 MasajidChat/
-├── result.json          ← REQUIRED
-├── files/               ← Excel files
-├── photos/              ← Mosque photos
-├── video_files/         ← (optional)
-└── voice_messages/      ← (optional)
+├── result.json          ← ملف JSON الرئيسي (مطلوب)
+├── files/               ← ملفات Excel والمرفقات
+├── photos/              ← صور المساجد
+├── video_files/         ← (اختياري)
+└── voice_messages/      ← (اختياري)
 ```
 
-**📖 See [MasajidChat/README.md](MasajidChat/README.md) for detailed instructions.**
+**📖 للمزيد من التفاصيل، راجع:** [MasajidChat/README.md](MasajidChat/README.md)
 
-#### Step 4: Run the ETL Pipeline
+---
+
+### ⚙️ الخطوة 3: تشغيل البرنامج | Run the ETL Pipeline
+
+بعد تصدير البيانات، شغّل البرنامج:
 
 ```bash
+# تشغيل البرنامج الرئيسي
 python src/parse_export.py
 ```
 
-Your CSVs will be generated in `out_csv/` (git-ignored, stays local).
+**النتائج:**
+- ملفات CSV في مجلد `out_csv/`
+- صور منظمة حسب المحافظة والمسجد في `media_organized/`
 
-### 🔒 What's Git-Ignored (Private Data)
+#### أوامر إضافية:
 
-The following folders are **NOT committed** to GitHub:
-- `MasajidChat/**` - Your Telegram export (~15 GB)
-- `out_csv/**` - Generated CSV files
-- `out_db/**` - Database exports
-- `media_organized/**` - Organized photos
-- `logs/**` - Runtime logs
+```bash
+# استخدام مسارات مخصصة
+python src/parse_export.py --export-path MasajidChat --output-dir out_csv
 
-Each team member works with their own local data copy.
+# تخطي تنظيم الصور (أسرع للاختبار)
+python src/parse_export.py --no-media
+```
 
-### ✅ What's Committed (Code Only)
+---
 
-- Python scripts (`src/`)
-- Documentation (`README.md`, `CLAUDE.md`)
-- Configuration templates (`.env.example`, `.gitignore`)
-- Folder structure (`.gitkeep` files)
-- Helper READMEs in each data folder
+### 🗄️ الخطوة 4: الاستيراد لقاعدة البيانات (اختياري) | Import to PostgreSQL
 
-### 🔄 Workflow
+إذا كنت تريد استخدام قاعدة بيانات متقدمة:
 
-1. **Pull latest code**: `git pull`
-2. **Make changes** to scripts or documentation
-3. **Test locally** with your Telegram export
-4. **Commit code changes** (never commit data!)
-5. **Push to GitHub**: `git push`
+```bash
+# إنشاء قاعدة البيانات
+createdb mosques
 
-Team members can update their exports independently without Git conflicts.
+# نسخ ملف الإعدادات
+cp .env.example .env
+# عدّل ملف .env بمعلومات قاعدة البيانات
+
+# استيراد البيانات
+python src/import_to_postgres.py
+```
+
+---
+
+## 👥 العمل الجماعي | Team Collaboration
+
+### 📌 نقاط مهمة للفريق | Important Notes
+
+هذا المشروع مصمم ليعمل عليه عدة أشخاص **بدون رفع الملفات الكبيرة** إلى GitHub.
+
+#### ✅ ما الذي يُرفع لـ GitHub؟
+- الأكواد البرمجية (`src/`)
+- الوثائق (`README.md`, `CLAUDE.md`)
+- ملفات الإعدادات (`.env.example`, `.gitignore`)
+
+#### 🔒 ما الذي لا يُرفع لـ GitHub؟ (يبقى على جهازك)
+- `MasajidChat/**` - تصدير التيليجرام (~15 GB)
+- `out_csv/**` - ملفات CSV الناتجة
+- `out_db/**` - تصديرات قاعدة البيانات
+- `media_organized/**` - الصور المنظمة
+- `logs/**` - سجلات التشغيل
+
+**كل عضو في الفريق يعمل على نسخته الخاصة من البيانات محلياً.**
+
+---
+
+### 🔄 سير العمل اليومي | Daily Workflow
+
+1. **سحب آخر التحديثات**: `git pull`
+2. **إجراء التعديلات** على الأكواد أو الوثائق
+3. **الاختبار محلياً** باستخدام تصدير التيليجرام الخاص بك
+4. **رفع التعديلات** (الأكواد فقط - لا ترفع البيانات!)
+   ```bash
+   git add src/
+   git commit -m "وصف التعديل"
+   git push
+   ```
+
+---
+
+### 📊 ماذا سأحصل بعد تشغيل البرنامج؟ | Output Files
+
+بعد تشغيل `python src/parse_export.py`، ستحصل على:
+
+#### 1️⃣ ملفات CSV منظمة في `out_csv/`:
+
+**provinces.csv** - قائمة المحافظات
+```csv
+id,topic_id,name_ar,topic_title,created_at
+1,2,درعا,مساجد درعا,2025-08-13T08:32:21
+2,3,ريف دمشق,مساجد ريف دمشق,2025-08-13T09:15:30
+```
+
+**mosques.csv** - بيانات المساجد
+```csv
+mosque_id,province_id,province_name,mosque_name,area_name,source_message_id,date,photo_count
+1,2,ريف دمشق,مسجد دك الباب,الزبداني,55,2025-08-13T11:32:09,3
+```
+
+**locations.csv** - روابط المواقع
+```csv
+mosque_id,province_name,mosque_name,area_name,gmaps_url
+1,ريف دمشق,مسجد دك الباب,الزبداني,https://maps.app.goo.gl/Ah9PHvv6DXYEaZZ86
+```
+
+**photos.csv** - معلومات الصور
+```csv
+photo_id,mosque_id,province_name,mosque_name,file_path,file_name,file_size,message_id
+1,1,ريف دمشق,مسجد دك الباب,files/IMG_4656.JPG,IMG_4656.JPG,5942448,52
+```
+
+**excel_files.csv** - ملفات Excel المرفقة
+```csv
+file_id,province_id,province_name,damage_type,file_name,file_path,file_size,message_id
+1,1,درعا,demolished,مساجد درعا مدمرة نهائي.xlsx,files/...,119144,26
+```
+
+#### 2️⃣ الصور منظمة في `media_organized/`:
+```
+media_organized/
+├── درعا/
+│   ├── مسجد الحراك/
+│   │   ├── photo_1.jpg
+│   │   └── photo_2.jpg
+│   └── مسجد الصنمين/
+│       └── photo_1.jpg
+├── ريف دمشق/
+│   └── مسجد دك الباب/
+│       ├── photo_1.jpg
+│       ├── photo_2.jpg
+│       └── photo_3.jpg
+└── حلب/
+    └── ...
+```
 
 ---
 
@@ -383,31 +476,68 @@ zabadani = mosques[mosques['area_name'] == 'الزبداني']
 
 ---
 
-## 🧪 Testing
+## ❓ الأسئلة الشائعة | FAQ
 
-### Verify Export
+### س: أين أجد ملفات CSV الناتجة؟
+**ج:** في مجلد `out_csv/` داخل المشروع. إذا لم يظهر المجلد، تأكد من تشغيل البرنامج أولاً.
 
+### س: هل يجب أن أرفع مجلد `MasajidChat/` إلى GitHub؟
+**ج:** **لا، إطلاقاً!** هذا المجلد يحتوي على بيانات ضخمة وهو مُستثنى تلقائياً عبر `.gitignore`.
+
+### س: كيف أتأكد من نجاح عملية المعالجة؟
+**ج:** افحص ملفات CSV:
 ```bash
-# Check record counts
+# عدد السجلات في كل ملف
 wc -l out_csv/*.csv
 
-# Verify provinces match topics
+# عرض أول 5 سطور من ملف المساجد
+head -5 out_csv/mosques.csv
+```
+
+### س: البرنامج لا يجد ملف `result.json`؟
+**ج:** تأكد من:
+1. مجلد `MasajidChat/` موجود في نفس مستوى المشروع
+2. ملف `result.json` موجود داخل `MasajidChat/`
+3. إذا كان التصدير في مكان آخر، استخدم:
+   ```bash
+   python src/parse_export.py --export-path "مسار/التصدير/الخاص/بك"
+   ```
+
+### س: هل يمكن تشغيل البرنامج على Windows؟
+**ج:** نعم! البرنامج يعمل على Windows, Mac, Linux.
+
+### س: كم من الوقت يستغرق البرنامج؟
+**ج:**
+- بدون تنظيم الصور (`--no-media`): 1-3 دقائق
+- مع تنظيم الصور: 5-15 دقيقة (حسب عدد الصور)
+
+---
+
+## 🧪 الفحص والتحقق | Testing & Validation
+
+### فحص النتائج | Verify Output
+
+```bash
+# عدد السجلات
+wc -l out_csv/*.csv
+
+# عرض المحافظات
 head out_csv/provinces.csv
 
-# Check photo organization
+# فحص تنظيم الصور
 ls -R media_organized/ | head -20
 
-# Validate Excel files
+# التحقق من ملفات Excel
 head out_csv/excel_files.csv
 ```
 
-### Data Quality Checks
+### قائمة التحقق من جودة البيانات | Data Quality Checklist
 
-- [ ] All provinces have both damaged + demolished Excel files?
-- [ ] Mosque names follow "مسجد [name]" pattern?
-- [ ] All photos have corresponding mosque records?
-- [ ] Maps links are valid Google Maps URLs?
-- [ ] No duplicate mosque entries (name + area)?
+- [ ] كل محافظة لديها ملفي Excel (متضررة + مدمرة)؟
+- [ ] أسماء المساجد تتبع نمط "مسجد [الاسم]"؟
+- [ ] كل صورة مرتبطة بسجل مسجد؟
+- [ ] روابط الخرائط صالحة (Google Maps)؟
+- [ ] لا توجد سجلات مكررة (اسم + منطقة)؟
 
 ---
 
@@ -422,30 +552,133 @@ Future contributors should:
 
 ---
 
-## 📞 Support
+## 🔧 استكشاف الأخطاء | Troubleshooting
 
-For issues with:
-- **Telegram export**: See Telegram Desktop documentation
-- **Database setup**: Check PostgreSQL connection in `.env`
-- **Parsing errors**: Review message pattern in `result.json`
-- **Missing data**: Verify Telegram export included all Topics
+### خطأ: `FileNotFoundError: result.json not found`
+
+**الحل:**
+```bash
+# تأكد من وجود الملف
+ls MasajidChat/result.json
+
+# إذا كان المجلد بمكان آخر
+python src/parse_export.py --export-path "المسار/الصحيح"
+```
+
+### خطأ: `ModuleNotFoundError: No module named 'pandas'`
+
+**الحل:**
+```bash
+# أعد تثبيت المكتبات
+pip install -r requirements.txt
+```
+
+### خطأ في الاتصال بقاعدة البيانات PostgreSQL
+
+**الحل:**
+1. تأكد من تشغيل PostgreSQL: `pg_isready`
+2. افحص ملف `.env` - تأكد من صحة المعلومات
+3. جرب الاتصال يدوياً: `psql -U postgres`
+
+### البرنامج يعمل ببطء شديد
+
+**الحل:**
+```bash
+# تخطي تنظيم الصور للإسراع
+python src/parse_export.py --no-media
+```
+
+### لا توجد صور في `media_organized/`
+
+**السبب المحتمل:**
+- استخدمت العلم `--no-media`
+- الصور غير موجودة في تصدير التيليجرام
+
+**الحل:**
+```bash
+# أعد التشغيل بدون --no-media
+python src/parse_export.py
+```
 
 ---
 
-## 📜 License
+## 📞 الدعم والمساعدة | Support
 
-This project is for humanitarian purposes (mosque reconstruction in Syria). Data should be handled responsibly and used only for reconstruction planning and coordination with the Ministry of Awqaf.
+للمساعدة في:
+- **مشاكل تصدير التيليجرام**: راجع دليل Telegram Desktop
+- **إعداد قاعدة البيانات**: افحص ملف `.env` ومعلومات الاتصال
+- **أخطاء المعالجة**: راجع نمط الرسائل في `result.json`
+- **بيانات مفقودة**: تأكد أن التصدير شمل جميع المواضيع (Topics)
+
+**للتواصل مع الفريق:**
+- افتح Issue على GitHub: [github.com/Xenar01/TelegramDBFix/issues](https://github.com/Xenar01/TelegramDBFix/issues)
 
 ---
 
-## 🙏 Acknowledgments
+## 🔍 كيف يعمل البرنامج؟ | How It Works
 
-- Telegram Desktop for export functionality
-- Field data collectors across Syrian provinces
-- Project coordinators managing the reconstruction effort
+### نمط التعرف على المساجد | Message Pattern Recognition
+
+البرنامج يحدد سجلات المساجد من خلال هذا النمط:
+
+```
+مجموعة الرسائل:
+  1️⃣ صور (1-5 صور للمسجد)
+  2️⃣ نص: "مسجد [الاسم]\n[المنطقة]"
+  3️⃣ رابط خرائط Google Maps
+
+مثال:
+  📷 [صورة 1] [صورة 2] [صورة 3]
+  📝 "مسجد الجسر
+      الزبداني"
+  🗺️ "https://maps.app.goo.gl/..."
+```
+
+### منطق الاستخراج | Extraction Logic
+
+1. **المواضيع ← المحافظات**: كل موضوع (Topic) يمثل محافظة
+   - "مساجد درعا" → درعا
+   - "مساجد حلب" → حلب
+
+2. **الرسائل النصية ← المساجد**:
+   - السطر الأول: اسم المسجد (يحتوي "مسجد")
+   - السطر الثاني: المنطقة داخل المحافظة
+
+3. **الصور السابقة ← صور المسجد**:
+   - البرنامج يبحث عن الصور قبل النص (حتى 20 رسالة)
+   - فقط الصور من نفس الموضوع (Topic)
+
+4. **الرسالة التالية ← موقع المسجد**:
+   - البرنامج يبحث عن رابط خرائط بعد النص مباشرة
 
 ---
 
-**Last Updated**: 2025-01-13
-**Version**: 1.0.0
-**Status**: Phase 1 - Initial ETL Pipeline ✅
+## 📜 الترخيص | License
+
+هذا المشروع لأغراض إنسانية (إعادة إعمار المساجد في سوريا).
+يجب التعامل مع البيانات بمسؤولية واستخدامها فقط لأغراض التخطيط لإعادة الإعمار والتنسيق مع وزارة الأوقاف.
+
+---
+
+## 🙏 شكر وتقدير | Acknowledgments
+
+- **Telegram Desktop** لوظيفة التصدير
+- **جامعو البيانات الميدانيون** عبر المحافظات السورية
+- **منسقو المشروع** الذين يديرون جهود إعادة الإعمار
+- جميع المساهمين في **مشروع إعادة إعمار المساجد 🕌**
+
+---
+
+## 📌 معلومات المشروع | Project Info
+
+**آخر تحديث**: 2025-01-13
+**الإصدار**: 1.0.0
+**الحالة**: المرحلة الأولى - ETL Pipeline ✅
+
+**المستودع**: [github.com/Xenar01/TelegramDBFix](https://github.com/Xenar01/TelegramDBFix)
+
+---
+
+> 🕌 **"إِنَّمَا يَعْمُرُ مَسَاجِدَ اللَّهِ مَنْ آمَنَ بِاللَّهِ وَالْيَوْمِ الْآخِرِ"** - سورة التوبة
+>
+> *May Allah accept this effort and aid in the reconstruction of His houses.*
