@@ -109,6 +109,89 @@ python src/import_to_postgres.py --no-schema
 
 ---
 
+## 👥 Team Collaboration Setup
+
+### For New Team Members
+
+This repository is designed for multiple team members to work with Telegram export data **without committing large files** to GitHub.
+
+#### Step 1: Clone the Repository
+
+```bash
+git clone https://github.com/Xenar01/TelegramDBFix.git
+cd TelegramDBFix
+```
+
+#### Step 2: Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+#### Step 3: Export Telegram Chat Data
+
+**Important:** Each team member needs to export the Telegram group data locally.
+
+1. Open **Telegram Desktop**
+2. Navigate to the mosque reconstruction group: **"مشروع إعادة إعمار المساجد 🕌"**
+3. Click **⋮** (three dots) → **Export chat history**
+4. Configure export:
+   - Format: **JSON**
+   - Include: **Photos**, **Files** (Excel), optionally Videos/Voice
+5. Save the export
+6. **Copy the exported files** into the `MasajidChat/` folder in your cloned repository
+
+Your `MasajidChat/` folder should contain:
+```
+MasajidChat/
+├── result.json          ← REQUIRED
+├── files/               ← Excel files
+├── photos/              ← Mosque photos
+├── video_files/         ← (optional)
+└── voice_messages/      ← (optional)
+```
+
+**📖 See [MasajidChat/README.md](MasajidChat/README.md) for detailed instructions.**
+
+#### Step 4: Run the ETL Pipeline
+
+```bash
+python src/parse_export.py
+```
+
+Your CSVs will be generated in `out_csv/` (git-ignored, stays local).
+
+### 🔒 What's Git-Ignored (Private Data)
+
+The following folders are **NOT committed** to GitHub:
+- `MasajidChat/**` - Your Telegram export (~15 GB)
+- `out_csv/**` - Generated CSV files
+- `out_db/**` - Database exports
+- `media_organized/**` - Organized photos
+- `logs/**` - Runtime logs
+
+Each team member works with their own local data copy.
+
+### ✅ What's Committed (Code Only)
+
+- Python scripts (`src/`)
+- Documentation (`README.md`, `CLAUDE.md`)
+- Configuration templates (`.env.example`, `.gitignore`)
+- Folder structure (`.gitkeep` files)
+- Helper READMEs in each data folder
+
+### 🔄 Workflow
+
+1. **Pull latest code**: `git pull`
+2. **Make changes** to scripts or documentation
+3. **Test locally** with your Telegram export
+4. **Commit code changes** (never commit data!)
+5. **Push to GitHub**: `git push`
+
+Team members can update their exports independently without Git conflicts.
+
+---
+
 ## 📂 Directory Structure
 
 ```
