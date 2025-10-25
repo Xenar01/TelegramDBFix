@@ -1,51 +1,126 @@
-# Output CSV Files
+# Output Data Files - Clean Dataset
 
-This folder contains **generated CSV files** from the ETL pipeline.
+**Last Updated:** October 25, 2025
+**Status:** Cleaned and ready for GUI/Database
 
-## 📊 Expected Files
+---
 
-After running `python src/parse_export.py`, you'll find:
+## Core Dataset (USE THIS)
 
-```
-out_csv/
-├── provinces.csv      ← Syrian provinces (Topics)
-├── mosques.csv        ← Mosque records with names and areas
-├── locations.csv      ← Google Maps links
-├── photos.csv         ← Photo metadata linked to mosques
-└── excel_files.csv    ← Excel file metadata (damaged/demolished)
-```
+### `conversation_clusters_analyzed.csv` (PRIMARY DATA)
+**517 mosques** extracted from Telegram conversation analysis
 
-## 🔍 What's in Each File
+**Columns:**
+- `name` - Mosque name (Arabic)
+- `area` - Area/region within province
+- `damage_type` - damaged/demolished/unknown
+- `confidence` - high/medium/low (AI extraction confidence)
+- `province` - Syrian province
+- `photo_files` - Semicolon-separated list of photo paths
+- `photo_count` - Number of photos
+- `maps_urls` - Google Maps links
+- `video_files` - Video file paths (if any)
+- `message_ids` - Source Telegram message IDs
+- `original_text` - Original text from Telegram
 
-### provinces.csv
-- Province ID, name (Arabic), Telegram topic ID
-- Example: `1,2,درعا,مساجد درعا,2025-08-13T08:32:21`
+**Quality Metrics:**
+- 192 mosques with photos (37.1%)
+- 221 mosques with maps (42.7%)
+- 395 high confidence (76.4%)
+- 110 medium confidence (21.3%)
+- 12 low confidence (2.3%)
 
-### mosques.csv
-- Mosque ID, province, name, area, photo count
-- Example: `1,2,ريف دمشق,مسجد دك الباب,الزبداني,55,2025-08-13T11:32:09,3`
+**Usage:** This is your main dataset for the GUI application.
 
-### locations.csv
-- Mosque ID, Google Maps URL
-- Example: `1,ريف دمشق,مسجد دك الباب,الزبداني,https://maps.app.goo.gl/...`
+---
 
-### photos.csv
-- Photo ID, mosque ID, file path, size
-- Links photos to specific mosques
+## Reference Data
 
-### excel_files.csv
-- Excel file metadata (damaged vs demolished lists)
-- Province, damage type, file path
+### `provinces.csv`
+List of Syrian provinces (9 entries)
+- `province_id`
+- `name_ar` - Arabic name
+- `telegram_topic_id` - Telegram topic ID
 
-## ⚠️ Git Ignore
+### `photos_catalog.csv`
+Complete catalog of all 1,368 photos from Telegram export
+- `message_id` - Telegram message ID
+- `date` - Upload date
+- `province` - Province name
+- `file_path` - Path to photo file
+- `reply_to` - Topic/thread ID
 
-This folder is **git-ignored**. CSV outputs are generated locally and not committed to the repository.
+### `maps_catalog.csv`
+Complete catalog of all 288 Google Maps links from Telegram
+- `message_id` - Telegram message ID
+- `province` - Province name
+- `maps_url` - Google Maps URL
+- `full_text` - Text containing the maps link
 
-## 📈 Usage
+### `excel_mosques_master.csv`
+Original mosque data from Excel files (570 entries)
+- Reference data from Excel spreadsheets
+- Includes damage type classifications
 
-Import CSVs into:
-- Excel/LibreOffice for analysis
-- PostgreSQL database (see `src/import_to_postgres.py`)
-- Python pandas for data processing
+### `excel_files.csv`
+Metadata about Excel files in the export
+- File names, provinces, damage types
 
-See [README.md](../README.md) for more details.
+---
+
+## Summary Statistics
+
+### `conversation_analysis_stats.txt`
+Summary of conversation analysis results:
+- Total clusters: 288
+- Mosques extracted: 517
+- API cost: $0.14
+- Breakdown by province
+
+### `excel_summary.txt`
+Summary of Excel file processing
+
+---
+
+## Organized Data
+
+### `by_province/` folder
+Province-specific CSV files (if generated)
+
+---
+
+## Deleted Files (Obsolete)
+
+The following files were removed as they contained failed matching attempts:
+- `mosques_enriched_with_media.csv` (only 2.7% photos matched)
+- `mosques_merged_master.csv` (failed merge)
+- `mosques_high_confidence.csv` (subset of failed data)
+- `ai_extracted_mosques.csv` (old AI extraction)
+- `mosques.csv`, `photos.csv`, `locations.csv` (old pipeline)
+- All failed matching reports and summaries
+
+---
+
+## Next Steps
+
+1. **For GUI Development:** Use `conversation_clusters_analyzed.csv` as primary data source
+2. **For Database Import:** Import from `conversation_clusters_analyzed.csv`
+3. **For Media Files:** Reference paths in `photo_files` column (relative to MasajidChat/)
+4. **For Validation:** Cross-reference with `excel_mosques_master.csv`
+
+---
+
+## Data Quality Notes
+
+**Strengths:**
+- High-quality conversation clustering
+- Good photo/maps matching (37-43%)
+- Clear province assignments
+- Source message traceability
+
+**Areas for Improvement:**
+- Some mosques missing photos
+- Some missing GPS coordinates
+- Could benefit from manual verification of low-confidence entries
+
+**Recommendation:** Build GUI to allow manual verification and enrichment of the 517 mosques.

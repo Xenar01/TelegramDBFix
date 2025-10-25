@@ -11,7 +11,10 @@
       "Bash(iconv:*)",
       "Bash(awk:*)",
       "Bash(echo \"  • AI Extraction: $0.09\")",
-      "Bash(echo:*)"
+      "Bash(echo:*)",
+      "Bash(dir:*)",
+      "Bash(cmd /c \"dir /b out_csv\\by_province\")",
+      "Bash(rm:*)"
     ],
     "deny": [],
     "ask": []

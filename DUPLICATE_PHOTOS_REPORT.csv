@@ -1,0 +1,178 @@
+﻿cluster_id,csv_row,mosque_name,area,province,photo_count,mosques_in_cluster,photo_preview
+2,2,مسجد الشيخ عبدالعزيز ابازيد,اللجاة,درعا,12,6,files/IMG_7489.JPG; files/IMG_7490.JPG; files/IMG_7724.JPG; files/IMG_7734.JPG; files/IMG_7678.JPG; 
+2,3,مسجد العمري,معربا,درعا,12,6,files/IMG_7489.JPG; files/IMG_7490.JPG; files/IMG_7724.JPG; files/IMG_7734.JPG; files/IMG_7678.JPG; 
+2,4,مسجد الشومرة,اللجاة,درعا,12,6,files/IMG_7489.JPG; files/IMG_7490.JPG; files/IMG_7724.JPG; files/IMG_7734.JPG; files/IMG_7678.JPG; 
+2,5,مسجد الشياحة,اللجاة,درعا,12,6,files/IMG_7489.JPG; files/IMG_7490.JPG; files/IMG_7724.JPG; files/IMG_7734.JPG; files/IMG_7678.JPG; 
+2,6,مسجد المدورة,اللجاة,درعا,12,6,files/IMG_7489.JPG; files/IMG_7490.JPG; files/IMG_7724.JPG; files/IMG_7734.JPG; files/IMG_7678.JPG; 
+2,7,مسجد سطح القعدان,اللجاة,درعا,12,6,files/IMG_7489.JPG; files/IMG_7490.JPG; files/IMG_7724.JPG; files/IMG_7734.JPG; files/IMG_7678.JPG; 
+3,8,مسجد البعيات,اللجاة,درعا,2,2,files/IMG_20250820_123306_125.JPG; files/IMG_20250820_123306_623.JPG
+3,9,مزرعة ناحية المسمية,درعا,درعا,2,2,files/IMG_20250820_123306_125.JPG; files/IMG_20250820_123306_623.JPG
+8,10,مسجد عبادة بن الصامت,حرستا,ريف دمشق,16,6,files/IMG_5001.JPG; files/IMG_5009.JPG; files/IMG_5015.JPG; files/IMG_5254.JPG; files/IMG_5246.JPG; 
+8,11,مسجد عقيل بن أبي طالب,حرستا,ريف دمشق,16,6,files/IMG_5001.JPG; files/IMG_5009.JPG; files/IMG_5015.JPG; files/IMG_5254.JPG; files/IMG_5246.JPG; 
+8,12,مسجد العمري,حرستا,ريف دمشق,16,6,files/IMG_5001.JPG; files/IMG_5009.JPG; files/IMG_5015.JPG; files/IMG_5254.JPG; files/IMG_5246.JPG; 
+8,13,مسجد الفتح,حرستا,ريف دمشق,16,6,files/IMG_5001.JPG; files/IMG_5009.JPG; files/IMG_5015.JPG; files/IMG_5254.JPG; files/IMG_5246.JPG; 
+8,14,مسجد الخولاني,حرستا,ريف دمشق,16,6,files/IMG_5001.JPG; files/IMG_5009.JPG; files/IMG_5015.JPG; files/IMG_5254.JPG; files/IMG_5246.JPG; 
+8,15,مسجد حذيفة بن اليمان,حرستا,ريف دمشق,16,6,files/IMG_5001.JPG; files/IMG_5009.JPG; files/IMG_5015.JPG; files/IMG_5254.JPG; files/IMG_5246.JPG; 
+9,16,أبو بكر الصديق,داريا,ريف دمشق,12,6,files/IMG_4862.JPG; files/IMG_4859.JPG; files/IMG_4974.JPG; files/IMG_4976.JPG; files/IMG_4742.JPG; 
+9,17,الحسن و الحسين,داريا,ريف دمشق,12,6,files/IMG_4862.JPG; files/IMG_4859.JPG; files/IMG_4974.JPG; files/IMG_4976.JPG; files/IMG_4742.JPG; 
+9,18,الرحمن,داريا,ريف دمشق,12,6,files/IMG_4862.JPG; files/IMG_4859.JPG; files/IMG_4974.JPG; files/IMG_4976.JPG; files/IMG_4742.JPG; 
+9,19,الزاوية,داريا,ريف دمشق,12,6,files/IMG_4862.JPG; files/IMG_4859.JPG; files/IMG_4974.JPG; files/IMG_4976.JPG; files/IMG_4742.JPG; 
+9,20,السلام,داريا,ريف دمشق,12,6,files/IMG_4862.JPG; files/IMG_4859.JPG; files/IMG_4974.JPG; files/IMG_4976.JPG; files/IMG_4742.JPG; 
+9,21,السمح بن مالك,داريا,ريف دمشق,12,6,files/IMG_4862.JPG; files/IMG_4859.JPG; files/IMG_4974.JPG; files/IMG_4976.JPG; files/IMG_4742.JPG; 
+10,22,الكبير,معضمية الشام,ريف دمشق,10,6,files/IMG_4951.JPG; files/IMG_4961.JPG; files/IMG_4830.JPG; files/IMG_4838.JPG; files/IMG_4944.JPG; 
+10,23,صلاح الدين,معضمية الشام,ريف دمشق,10,6,files/IMG_4951.JPG; files/IMG_4961.JPG; files/IMG_4830.JPG; files/IMG_4838.JPG; files/IMG_4944.JPG; 
+10,24,داريا,داريا,ريف دمشق,10,6,files/IMG_4951.JPG; files/IMG_4961.JPG; files/IMG_4830.JPG; files/IMG_4838.JPG; files/IMG_4944.JPG; 
+10,25,علي بن أبي طالب,معضمية الشام,ريف دمشق,10,6,files/IMG_4951.JPG; files/IMG_4961.JPG; files/IMG_4830.JPG; files/IMG_4838.JPG; files/IMG_4944.JPG; 
+10,26,عمر بن الخطاب,معضمية الشام,ريف دمشق,10,6,files/IMG_4951.JPG; files/IMG_4961.JPG; files/IMG_4830.JPG; files/IMG_4838.JPG; files/IMG_4944.JPG; 
+10,27,فاطمة الزهراء,داريا,ريف دمشق,10,6,files/IMG_4951.JPG; files/IMG_4961.JPG; files/IMG_4830.JPG; files/IMG_4838.JPG; files/IMG_4944.JPG; 
+11,28,الرضا,ريف دمشق,ريف دمشق,12,10,files/IMG_4690.JPG; files/IMG_4698.JPG; files/IMG_4606.JPG; files/IMG_4608.JPG; files/IMG_5840.JPG; 
+11,29,داريا,ريف دمشق,ريف دمشق,12,10,files/IMG_4690.JPG; files/IMG_4698.JPG; files/IMG_4606.JPG; files/IMG_4608.JPG; files/IMG_5840.JPG; 
+11,30,الهداية,ريف دمشق,ريف دمشق,12,10,files/IMG_4690.JPG; files/IMG_4698.JPG; files/IMG_4606.JPG; files/IMG_4608.JPG; files/IMG_5840.JPG; 
+11,31,رنكوس,ريف دمشق,ريف دمشق,12,10,files/IMG_4690.JPG; files/IMG_4698.JPG; files/IMG_4606.JPG; files/IMG_4608.JPG; files/IMG_5840.JPG; 
+11,32,العثمان,ريف دمشق,ريف دمشق,12,10,files/IMG_4690.JPG; files/IMG_4698.JPG; files/IMG_4606.JPG; files/IMG_4608.JPG; files/IMG_5840.JPG; 
+11,33,عدرا,ريف دمشق,ريف دمشق,12,10,files/IMG_4690.JPG; files/IMG_4698.JPG; files/IMG_4606.JPG; files/IMG_4608.JPG; files/IMG_5840.JPG; 
+11,34,القطري,ريف دمشق,ريف دمشق,12,10,files/IMG_4690.JPG; files/IMG_4698.JPG; files/IMG_4606.JPG; files/IMG_4608.JPG; files/IMG_5840.JPG; 
+11,35,عدرا,ريف دمشق,ريف دمشق,12,10,files/IMG_4690.JPG; files/IMG_4698.JPG; files/IMG_4606.JPG; files/IMG_4608.JPG; files/IMG_5840.JPG; 
+11,36,مطر,ريف دمشق,ريف دمشق,12,10,files/IMG_4690.JPG; files/IMG_4698.JPG; files/IMG_4606.JPG; files/IMG_4608.JPG; files/IMG_5840.JPG; 
+11,37,عدرا,ريف دمشق,ريف دمشق,12,10,files/IMG_4690.JPG; files/IMG_4698.JPG; files/IMG_4606.JPG; files/IMG_4608.JPG; files/IMG_5840.JPG; 
+12,38,السحلول,ريف دمشق,ريف دمشق,14,7,files/IMG_5707.JPG; files/IMG_5715.JPG; files/IMG_5730.JPG; files/IMG_5711.JPG; files/IMG_5764.JPG; 
+12,39,قطنا,ريف دمشق,ريف دمشق,14,7,files/IMG_5707.JPG; files/IMG_5715.JPG; files/IMG_5730.JPG; files/IMG_5711.JPG; files/IMG_5764.JPG; 
+12,40,المهدي,ريف دمشق,ريف دمشق,14,7,files/IMG_5707.JPG; files/IMG_5715.JPG; files/IMG_5730.JPG; files/IMG_5711.JPG; files/IMG_5764.JPG; 
+12,41,الصحابة,ريف دمشق,ريف دمشق,14,7,files/IMG_5707.JPG; files/IMG_5715.JPG; files/IMG_5730.JPG; files/IMG_5711.JPG; files/IMG_5764.JPG; 
+12,42,عقبة بن نافع,ريف دمشق,ريف دمشق,14,7,files/IMG_5707.JPG; files/IMG_5715.JPG; files/IMG_5730.JPG; files/IMG_5711.JPG; files/IMG_5764.JPG; 
+12,43,النور,حرستا,ريف دمشق,14,7,files/IMG_5707.JPG; files/IMG_5715.JPG; files/IMG_5730.JPG; files/IMG_5711.JPG; files/IMG_5764.JPG; 
+12,44,النور,التل,ريف دمشق,14,7,files/IMG_5707.JPG; files/IMG_5715.JPG; files/IMG_5730.JPG; files/IMG_5711.JPG; files/IMG_5764.JPG; 
+13,45,مسجد ابراهيم الخليل,ريف دمشق,ريف دمشق,14,7,files/DJI_20250730190029_0050_D.JPG; files/DJI_20250730185956_0048_D.JPG; files/DJI_20250730190912_0
+13,46,مسجد ابو بكر الصديق,ريف دمشق,ريف دمشق,14,7,files/DJI_20250730190029_0050_D.JPG; files/DJI_20250730185956_0048_D.JPG; files/DJI_20250730190912_0
+13,47,مسجد ال ياسر,ريف دمشق,ريف دمشق,14,7,files/DJI_20250730190029_0050_D.JPG; files/DJI_20250730185956_0048_D.JPG; files/DJI_20250730190912_0
+13,48,مسجد البراء بن عازب,ريف دمشق,ريف دمشق,14,7,files/DJI_20250730190029_0050_D.JPG; files/DJI_20250730185956_0048_D.JPG; files/DJI_20250730190912_0
+13,49,مسجد الرحمن,ريف دمشق,ريف دمشق,14,7,files/DJI_20250730190029_0050_D.JPG; files/DJI_20250730185956_0048_D.JPG; files/DJI_20250730190912_0
+13,50,مسجد النذير,ريف دمشق,ريف دمشق,14,7,files/DJI_20250730190029_0050_D.JPG; files/DJI_20250730185956_0048_D.JPG; files/DJI_20250730190912_0
+13,51,مسجد معاذ بن جبل,ريف دمشق,ريف دمشق,14,7,files/DJI_20250730190029_0050_D.JPG; files/DJI_20250730185956_0048_D.JPG; files/DJI_20250730190912_0
+36,93,مسجد اسماعيل الكيان,الطرنبة,إدلب,6,2,files/photo_2025-07-16_08-12-12.jpg; files/IMG_9887.JPG; files/IMG_9896.JPG; files/photo_2025-07-22_
+36,94,مسجد الرحمن,مزرعة حاج ضياع,إدلب,6,2,files/photo_2025-07-16_08-12-12.jpg; files/IMG_9887.JPG; files/IMG_9896.JPG; files/photo_2025-07-22_
+42,97,مسجد عمر بن الخطاب,طبيش,إدلب,31,10,files/photo_2025-08-21_09-34-07.jpg; files/IMG_3694.JPG; files/IMG_3669.JPG; files/photo_2025-08-21_
+42,98,مسجد عمر بن الخطاب,مزرعة الخضراء,إدلب,31,10,files/photo_2025-08-21_09-34-07.jpg; files/IMG_3694.JPG; files/IMG_3669.JPG; files/photo_2025-08-21_
+42,99,مسجد قرية مزرعة الجدعان,مزرعة الجدعان,إدلب,31,10,files/photo_2025-08-21_09-34-07.jpg; files/IMG_3694.JPG; files/IMG_3669.JPG; files/photo_2025-08-21_
+42,100,مسجد ابو بكر الصديق,ام ميال الجابرية,إدلب,31,10,files/photo_2025-08-21_09-34-07.jpg; files/IMG_3694.JPG; files/IMG_3669.JPG; files/photo_2025-08-21_
+42,101,مسجد التوبة,قرية اسطبلات,إدلب,31,10,files/photo_2025-08-21_09-34-07.jpg; files/IMG_3694.JPG; files/IMG_3669.JPG; files/photo_2025-08-21_
+42,102,المسجد الكبير,رسم الورد,إدلب,31,10,files/photo_2025-08-21_09-34-07.jpg; files/IMG_3694.JPG; files/IMG_3669.JPG; files/photo_2025-08-21_
+42,103,مسجد قرية ربيعة برنان,ربيعة برنان,إدلب,31,10,files/photo_2025-08-21_09-34-07.jpg; files/IMG_3694.JPG; files/IMG_3669.JPG; files/photo_2025-08-21_
+42,104,مسجد ال منحر,باريسا,إدلب,31,10,files/photo_2025-08-21_09-34-07.jpg; files/IMG_3694.JPG; files/IMG_3669.JPG; files/photo_2025-08-21_
+42,105,مسجد,قرية الطلب,إدلب,31,10,files/photo_2025-08-21_09-34-07.jpg; files/IMG_3694.JPG; files/IMG_3669.JPG; files/photo_2025-08-21_
+42,106,مسجد,قرية الطيبات,إدلب,31,10,files/photo_2025-08-21_09-34-07.jpg; files/IMG_3694.JPG; files/IMG_3669.JPG; files/photo_2025-08-21_
+47,108,مسجد الرحمن,الخوين,إدلب,45,11,files/IMG_0776.JPG; files/IMG_0778.JPG; files/IMG_0758.JPG; files/IMG_0772.JPG; files/IMG_1572.JPG; 
+47,109,مسجد الزعلانة,قرية الزعلانة,إدلب,45,11,files/IMG_0776.JPG; files/IMG_0778.JPG; files/IMG_0758.JPG; files/IMG_0772.JPG; files/IMG_1572.JPG; 
+47,110,مسجد الكبير,الدير الشرقي,إدلب,45,11,files/IMG_0776.JPG; files/IMG_0778.JPG; files/IMG_0758.JPG; files/IMG_0772.JPG; files/IMG_1572.JPG; 
+47,111,مسجد قرية القاهرة,قرية القاهرة,إدلب,45,11,files/IMG_0776.JPG; files/IMG_0778.JPG; files/IMG_0758.JPG; files/IMG_0772.JPG; files/IMG_1572.JPG; 
+47,112,مسجد الكبير,حيش,إدلب,45,11,files/IMG_0776.JPG; files/IMG_0778.JPG; files/IMG_0758.JPG; files/IMG_0772.JPG; files/IMG_1572.JPG; 
+47,113,مسجد اسماعيل الكيان,الطرنبة,إدلب,45,11,files/IMG_0776.JPG; files/IMG_0778.JPG; files/IMG_0758.JPG; files/IMG_0772.JPG; files/IMG_1572.JPG; 
+47,114,مسجد الكيالي,معرة النعمان,إدلب,45,11,files/IMG_0776.JPG; files/IMG_0778.JPG; files/IMG_0758.JPG; files/IMG_0772.JPG; files/IMG_1572.JPG; 
+47,115,مسجد النصر,التح,إدلب,45,11,files/IMG_0776.JPG; files/IMG_0778.JPG; files/IMG_0758.JPG; files/IMG_0772.JPG; files/IMG_1572.JPG; 
+47,116,مسجد الهوارين,ابو الظهور,إدلب,45,11,files/IMG_0776.JPG; files/IMG_0778.JPG; files/IMG_0758.JPG; files/IMG_0772.JPG; files/IMG_1572.JPG; 
+47,117,مسجد عبد القادر باقادر,كفرعويد,إدلب,45,11,files/IMG_0776.JPG; files/IMG_0778.JPG; files/IMG_0758.JPG; files/IMG_0772.JPG; files/IMG_1572.JPG; 
+47,118,مساجد مدمرة,إدلب,إدلب,45,11,files/IMG_0776.JPG; files/IMG_0778.JPG; files/IMG_0758.JPG; files/IMG_0772.JPG; files/IMG_1572.JPG; 
+54,124,جامع المهمندار,حلب,حلب,12,6,files/IMG_2184.JPG; files/IMG_2199.JPG; files/IMG_2309.JPG; files/IMG_2305.JPG; files/IMG_2214.JPG; 
+54,125,مسجد الحسن,حلب,حلب,12,6,files/IMG_2184.JPG; files/IMG_2199.JPG; files/IMG_2309.JPG; files/IMG_2305.JPG; files/IMG_2214.JPG; 
+54,126,مسجد صالح الحال,حلب,حلب,12,6,files/IMG_2184.JPG; files/IMG_2199.JPG; files/IMG_2309.JPG; files/IMG_2305.JPG; files/IMG_2214.JPG; 
+54,127,مسجد ابشير باشا,حلب,حلب,12,6,files/IMG_2184.JPG; files/IMG_2199.JPG; files/IMG_2309.JPG; files/IMG_2305.JPG; files/IMG_2214.JPG; 
+54,128,جامع العمري,حلب,حلب,12,6,files/IMG_2184.JPG; files/IMG_2199.JPG; files/IMG_2309.JPG; files/IMG_2305.JPG; files/IMG_2214.JPG; 
+54,129,جامع القرمانية,حلب,حلب,12,6,files/IMG_2184.JPG; files/IMG_2199.JPG; files/IMG_2309.JPG; files/IMG_2305.JPG; files/IMG_2214.JPG; 
+55,130,مسجد هاجر,حلب,حلب,27,10,files/IMG_9251.JPG; files/IMG_9246.JPG; files/IMG_9401.JPG; files/IMG_9395.JPG; files/IMG_9400.JPG; 
+55,131,مسجد عمر بن الخطاب,حلب,حلب,27,10,files/IMG_9251.JPG; files/IMG_9246.JPG; files/IMG_9401.JPG; files/IMG_9395.JPG; files/IMG_9400.JPG; 
+55,132,مسجد خالد بن الوليد,حلب,حلب,27,10,files/IMG_9251.JPG; files/IMG_9246.JPG; files/IMG_9401.JPG; files/IMG_9395.JPG; files/IMG_9400.JPG; 
+55,133,مسجد حمزة,حلب,حلب,27,10,files/IMG_9251.JPG; files/IMG_9246.JPG; files/IMG_9401.JPG; files/IMG_9395.JPG; files/IMG_9400.JPG; 
+55,134,مسجد الكبير قرية عبد ربه,حلب,حلب,27,10,files/IMG_9251.JPG; files/IMG_9246.JPG; files/IMG_9401.JPG; files/IMG_9395.JPG; files/IMG_9400.JPG; 
+55,135,مسجد السلام,حلب,حلب,27,10,files/IMG_9251.JPG; files/IMG_9246.JPG; files/IMG_9401.JPG; files/IMG_9395.JPG; files/IMG_9400.JPG; 
+55,136,مسجد الحسن والحسين,حلب,حلب,27,10,files/IMG_9251.JPG; files/IMG_9246.JPG; files/IMG_9401.JPG; files/IMG_9395.JPG; files/IMG_9400.JPG; 
+55,137,مسجد الكبير قرية زيتان,حلب,حلب,27,10,files/IMG_9251.JPG; files/IMG_9246.JPG; files/IMG_9401.JPG; files/IMG_9395.JPG; files/IMG_9400.JPG; 
+55,138,مسجد عائشة,حلب,حلب,27,10,files/IMG_9251.JPG; files/IMG_9246.JPG; files/IMG_9401.JPG; files/IMG_9395.JPG; files/IMG_9400.JPG; 
+55,139,مسجد الفاروق,حلب,حلب,27,10,files/IMG_9251.JPG; files/IMG_9246.JPG; files/IMG_9401.JPG; files/IMG_9395.JPG; files/IMG_9400.JPG; 
+56,140,المسجد الصغير قرية تادف,حلب,حلب,16,8,files/٢٠٢٥٠٧٢٧_١١٣٠١٨.jpg; files/٢٠٢٥٠٧٢٧_١١٢٩٥٦.jpg; files/٢٠٢٥٠٧٢٧_١١٢٣٢٤.jpg; files/٢٠٢٥٠٧٢٧_١١٢٢
+56,141,جامع الأنصار,حلب,حلب,16,8,files/٢٠٢٥٠٧٢٧_١١٣٠١٨.jpg; files/٢٠٢٥٠٧٢٧_١١٢٩٥٦.jpg; files/٢٠٢٥٠٧٢٧_١١٢٣٢٤.jpg; files/٢٠٢٥٠٧٢٧_١١٢٢
+56,142,مسجد الحمادة,حلب,حلب,16,8,files/٢٠٢٥٠٧٢٧_١١٣٠١٨.jpg; files/٢٠٢٥٠٧٢٧_١١٢٩٥٦.jpg; files/٢٠٢٥٠٧٢٧_١١٢٣٢٤.jpg; files/٢٠٢٥٠٧٢٧_١١٢٢
+56,143,مسجد السوق,حلب,حلب,16,8,files/٢٠٢٥٠٧٢٧_١١٣٠١٨.jpg; files/٢٠٢٥٠٧٢٧_١١٢٩٥٦.jpg; files/٢٠٢٥٠٧٢٧_١١٢٣٢٤.jpg; files/٢٠٢٥٠٧٢٧_١١٢٢
+56,144,مسجد إبراهيم الخليل,حلب,حلب,16,8,files/٢٠٢٥٠٧٢٧_١١٣٠١٨.jpg; files/٢٠٢٥٠٧٢٧_١١٢٩٥٦.jpg; files/٢٠٢٥٠٧٢٧_١١٢٣٢٤.jpg; files/٢٠٢٥٠٧٢٧_١١٢٢
+56,145,مسجد الجنيد,حلب,حلب,16,8,files/٢٠٢٥٠٧٢٧_١١٣٠١٨.jpg; files/٢٠٢٥٠٧٢٧_١١٢٩٥٦.jpg; files/٢٠٢٥٠٧٢٧_١١٢٣٢٤.jpg; files/٢٠٢٥٠٧٢٧_١١٢٢
+56,146,مسجد الساحة,حلب,حلب,16,8,files/٢٠٢٥٠٧٢٧_١١٣٠١٨.jpg; files/٢٠٢٥٠٧٢٧_١١٢٩٥٦.jpg; files/٢٠٢٥٠٧٢٧_١١٢٣٢٤.jpg; files/٢٠٢٥٠٧٢٧_١١٢٢
+56,147,مسجد سيدنا يوسف,حلب,حلب,16,8,files/٢٠٢٥٠٧٢٧_١١٣٠١٨.jpg; files/٢٠٢٥٠٧٢٧_١١٢٩٥٦.jpg; files/٢٠٢٥٠٧٢٧_١١٢٣٢٤.jpg; files/٢٠٢٥٠٧٢٧_١١٢٢
+59,150,مسجد أدم عليه السلام,حلب,حلب,12,4,files/IMG_2679.JPG; files/IMG_2672.JPG; files/IMG_2681.JPG; files/IMG_2663.JPG; files/IMG_2659.JPG; 
+59,151,مسجد شهداء الأقصى,حلب,حلب,12,4,files/IMG_2679.JPG; files/IMG_2672.JPG; files/IMG_2681.JPG; files/IMG_2663.JPG; files/IMG_2659.JPG; 
+59,152,مسجد العباس,حلب,حلب,12,4,files/IMG_2679.JPG; files/IMG_2672.JPG; files/IMG_2681.JPG; files/IMG_2663.JPG; files/IMG_2659.JPG; 
+59,153,مسجد المتقين,حلب,حلب,12,4,files/IMG_2679.JPG; files/IMG_2672.JPG; files/IMG_2681.JPG; files/IMG_2663.JPG; files/IMG_2659.JPG; 
+60,154,مسجد البدوي,حلب,حلب,9,3,files/IMG_4405.JPG; files/IMG_4408.JPG; files/IMG_4406.JPG; files/IMG_4397.JPG; files/IMG_4403.JPG; 
+60,155,مسجد ابو بكر الصديق,حلب,حلب,9,3,files/IMG_4405.JPG; files/IMG_4408.JPG; files/IMG_4406.JPG; files/IMG_4397.JPG; files/IMG_4403.JPG; 
+60,156,مسجد الراشدين الشمالية,حلب,حلب,9,3,files/IMG_4405.JPG; files/IMG_4408.JPG; files/IMG_4406.JPG; files/IMG_4397.JPG; files/IMG_4403.JPG; 
+64,161,مسجد صهيب بن سنان,حلب,حلب,6,2,files/IMG_4488.JPG; files/IMG_4486.JPG; files/IMG_4491.JPG; files/IMG_4495.JPG; files/IMG_4499.JPG; 
+64,162,مسجد عبد ربه,حلب,حلب,6,2,files/IMG_4488.JPG; files/IMG_4486.JPG; files/IMG_4491.JPG; files/IMG_4495.JPG; files/IMG_4499.JPG; 
+71,182,مسجد السلام,حلب,حلب,1,3,files/-2147483648_-213349.jpg
+71,183,الراشدين الشمالية,حلب,حلب,1,3,files/-2147483648_-213349.jpg
+71,184,عمر بن الخطاب,حلب,حلب,1,3,files/-2147483648_-213349.jpg
+85,194,ارض الوطى,اللاذقية,اللاذقية,16,6,files/IMG_3158.JPG; files/IMG_3160.JPG; files/IMG_3130.JPG; files/IMG_3147.JPG; files/IMG_3150.JPG; 
+85,195,ارض الوطى عبدالله بن مسعود,اللاذقية,اللاذقية,16,6,files/IMG_3158.JPG; files/IMG_3160.JPG; files/IMG_3130.JPG; files/IMG_3147.JPG; files/IMG_3150.JPG; 
+85,196,أسامة بن زيد القنطرة,اللاذقية,اللاذقية,16,6,files/IMG_3158.JPG; files/IMG_3160.JPG; files/IMG_3130.JPG; files/IMG_3147.JPG; files/IMG_3150.JPG; 
+85,197,الاحسان كنسبا,اللاذقية,اللاذقية,16,6,files/IMG_3158.JPG; files/IMG_3160.JPG; files/IMG_3130.JPG; files/IMG_3147.JPG; files/IMG_3150.JPG; 
+85,198,شيرقاق الحفة,اللاذقية,اللاذقية,16,6,files/IMG_3158.JPG; files/IMG_3160.JPG; files/IMG_3130.JPG; files/IMG_3147.JPG; files/IMG_3150.JPG; 
+85,199,الحمرات,اللاذقية,اللاذقية,16,6,files/IMG_3158.JPG; files/IMG_3160.JPG; files/IMG_3130.JPG; files/IMG_3147.JPG; files/IMG_3150.JPG; 
+86,200,الحور,اللاذقية,اللاذقية,6,2,files/IMG_3433.JPG; files/IMG_3443 - نسخة.JPG; files/IMG_3457 - نسخة.JPG; files/IMG_3616.JPG; files/
+86,201,الدرة,اللاذقية,اللاذقية,6,2,files/IMG_3433.JPG; files/IMG_3443 - نسخة.JPG; files/IMG_3457 - نسخة.JPG; files/IMG_3616.JPG; files/
+88,203,الروضة,اللاذقية,اللاذقية,12,4,files/IMG_3627.JPG; files/IMG_3631.JPG; files/IMG_3637.JPG; files/IMG_3739.JPG; files/IMG_3743.JPG; 
+88,204,الريحانية عمار بن ياسر,اللاذقية,اللاذقية,12,4,files/IMG_3627.JPG; files/IMG_3631.JPG; files/IMG_3637.JPG; files/IMG_3739.JPG; files/IMG_3743.JPG; 
+88,205,الريحانية قديم,اللاذقية,اللاذقية,12,4,files/IMG_3627.JPG; files/IMG_3631.JPG; files/IMG_3637.JPG; files/IMG_3739.JPG; files/IMG_3743.JPG; 
+88,206,السكرية,اللاذقية,اللاذقية,12,4,files/IMG_3627.JPG; files/IMG_3631.JPG; files/IMG_3637.JPG; files/IMG_3739.JPG; files/IMG_3743.JPG; 
+89,207,الشاكرية,اللاذقية,اللاذقية,17,5,files/1754435437252.jpg; files/1754435437277.jpg; files/1754435437315.jpg; files/IMG_3672.JPG; files
+89,208,العطيرة,اللاذقية,اللاذقية,17,5,files/1754435437252.jpg; files/1754435437277.jpg; files/1754435437315.jpg; files/IMG_3672.JPG; files
+89,209,العيدو العارفين بالله,اللاذقية,اللاذقية,17,5,files/1754435437252.jpg; files/1754435437277.jpg; files/1754435437315.jpg; files/IMG_3672.JPG; files
+89,210,الغنيمية,اللاذقية,اللاذقية,17,5,files/1754435437252.jpg; files/1754435437277.jpg; files/1754435437315.jpg; files/IMG_3672.JPG; files
+89,211,اللاذقية النصر,اللاذقية,اللاذقية,17,5,files/1754435437252.jpg; files/1754435437277.jpg; files/1754435437315.jpg; files/IMG_3672.JPG; files
+98,217,مزين,اللاذقية,اللاذقية,10,3,files/IMG_3445.JPG; files/IMG_3451.JPG; files/IMG_3455.JPG; files/IMG_3211.JPG; files/IMG_3215.JPG; 
+98,218,نحشبا,اللاذقية,اللاذقية,10,3,files/IMG_3445.JPG; files/IMG_3451.JPG; files/IMG_3455.JPG; files/IMG_3211.JPG; files/IMG_3215.JPG; 
+98,219,وادي باصور,اللاذقية,اللاذقية,10,3,files/IMG_3445.JPG; files/IMG_3451.JPG; files/IMG_3455.JPG; files/IMG_3211.JPG; files/IMG_3215.JPG; 
+99,220,السودة,اللاذقية,اللاذقية,12,4,files/IMG_3595.JPG; files/IMG_3599.JPG; files/IMG_3601.JPG; files/IMG_3659.JPG; files/IMG_3663.JPG; 
+99,221,الكبير,اللاذقية,اللاذقية,12,4,files/IMG_3595.JPG; files/IMG_3599.JPG; files/IMG_3601.JPG; files/IMG_3659.JPG; files/IMG_3663.JPG; 
+99,222,الوادي,اللاذقية,اللاذقية,12,4,files/IMG_3595.JPG; files/IMG_3599.JPG; files/IMG_3601.JPG; files/IMG_3659.JPG; files/IMG_3663.JPG; 
+99,223,كلز سلمان الفارسي,اللاذقية,اللاذقية,12,4,files/IMG_3595.JPG; files/IMG_3599.JPG; files/IMG_3601.JPG; files/IMG_3659.JPG; files/IMG_3663.JPG; 
+132,258,مسجد سعد بن أبي وقاص,الحميدية,القنيطرة,18,9,files/IMG_20250814_095320_790.jpg; files/IMG_20250814_095321_098.jpg; files/IMG_20250814_095405_396.
+132,259,مسجد أبو بكر الصديق,سويسة,القنيطرة,18,9,files/IMG_20250814_095320_790.jpg; files/IMG_20250814_095321_098.jpg; files/IMG_20250814_095405_396.
+132,260,مسجد علي بن أبي طالب,مسحرة,القنيطرة,18,9,files/IMG_20250814_095320_790.jpg; files/IMG_20250814_095321_098.jpg; files/IMG_20250814_095405_396.
+132,261,مسجد مصعب بن عمير,رسم النجرس,القنيطرة,18,9,files/IMG_20250814_095320_790.jpg; files/IMG_20250814_095321_098.jpg; files/IMG_20250814_095405_396.
+132,262,مسجد أبو عبيدة بن الجراح,ممتنة,القنيطرة,18,9,files/IMG_20250814_095320_790.jpg; files/IMG_20250814_095321_098.jpg; files/IMG_20250814_095405_396.
+132,263,مسجد النصر,تل صاحي,القنيطرة,18,9,files/IMG_20250814_095320_790.jpg; files/IMG_20250814_095321_098.jpg; files/IMG_20250814_095405_396.
+132,264,مسجد الحسنين,كودنة,القنيطرة,18,9,files/IMG_20250814_095320_790.jpg; files/IMG_20250814_095321_098.jpg; files/IMG_20250814_095405_396.
+132,265,مسجد ابراهيم الخليل,القحطانية,القنيطرة,18,9,files/IMG_20250814_095320_790.jpg; files/IMG_20250814_095321_098.jpg; files/IMG_20250814_095405_396.
+132,266,مسجد الفضل بن العباس,عين البغال,القنيطرة,18,9,files/IMG_20250814_095320_790.jpg; files/IMG_20250814_095321_098.jpg; files/IMG_20250814_095405_396.
+146,284,مسجد خضير,البوكمال,دير الزور,6,3,files/IMG-20250821-WA0016.jpg; files/IMG-20250821-WA0015.jpg; files/IMG_20250821_102115.jpg; files/I
+146,285,مسجد أبو بكر الصديق,الجلاء,دير الزور,6,3,files/IMG-20250821-WA0016.jpg; files/IMG-20250821-WA0015.jpg; files/IMG_20250821_102115.jpg; files/I
+146,286,المسجد العمري الأثري,تل العشارة,دير الزور,6,3,files/IMG-20250821-WA0016.jpg; files/IMG-20250821-WA0015.jpg; files/IMG_20250821_102115.jpg; files/I
+151,289,مسجد الطركي,السويعية,دير الزور,8,4,files/IMG_20250821_143147.jpg; files/Screenshot_20250821_131748_cn_wps_moffice_eng_PDFReader1.jpg; f
+151,290,مسجد عمر بن عبد العزيز,الجلاء,دير الزور,8,4,files/IMG_20250821_143147.jpg; files/Screenshot_20250821_131748_cn_wps_moffice_eng_PDFReader1.jpg; f
+151,291,المسجد العمري الأثري,تل العشارة,دير الزور,8,4,files/IMG_20250821_143147.jpg; files/Screenshot_20250821_131748_cn_wps_moffice_eng_PDFReader1.jpg; f
+151,292,مسجد أسامة بن زيد,القورية,دير الزور,8,4,files/IMG_20250821_143147.jpg; files/Screenshot_20250821_131748_cn_wps_moffice_eng_PDFReader1.jpg; f
+177,363,مسجد الشيخ يوسف,مدينة طيبة الامام,حماة,1,7,files/10.jpg
+177,364,مسجدالحسين,مدينة كفرزيتا,حماة,1,7,files/10.jpg
+177,365,مسجد ابو عبيدة بن الجراح,مدينة كفزيتا,حماة,1,7,files/10.jpg
+177,366,مسجد عمر بن الخطاب,مدينة كفرزيتا,حماة,1,7,files/10.jpg
+177,367,مسجد عثمان بن عفان,مدينة اللطامنة,حماة,1,7,files/10.jpg
+177,368,مسجد معاوية بن ابي سفيان,مدينة كفرزيتا,حماة,1,7,files/10.jpg
+177,369,مسجد عمر بن الخطاب,قرية الزكاه,حماة,1,7,files/10.jpg
+179,376,مسجد الرحمن,جن,حماة,1,7,files/DJI_20250811091908_0010_D.JPG
+179,377,مسجد ابو بكر,جب سليمان,حماة,1,7,files/DJI_20250811091908_0010_D.JPG
+179,378,مسجد السلطان اويس,جب سليمان,حماة,1,7,files/DJI_20250811091908_0010_D.JPG
+179,379,مسجد الجنوبي,الحويجه,حماة,1,7,files/DJI_20250811091908_0010_D.JPG
+179,380,مسجد الايمان,شهر ناز,حماة,1,7,files/DJI_20250811091908_0010_D.JPG
+179,381,مسجد الكبير,كفرنبودة,حماة,1,7,files/DJI_20250811091908_0010_D.JPG
+179,382,مسجد النور,كفرنبودة,حماة,1,7,files/DJI_20250811091908_0010_D.JPG
+186,390,مسجد ابو بكر,حماة,حماة,5,2,files/IMG_0081.JPG; files/IMG_0080.JPG; files/IMG_0077.JPG; files/IMG_0084.JPG; files/IMG_0087.JPG
+186,391,مسجد بلال بن رباح,حماة,حماة,5,2,files/IMG_0081.JPG; files/IMG_0080.JPG; files/IMG_0077.JPG; files/IMG_0084.JPG; files/IMG_0087.JPG
+187,392,مسجد الزبير بن العوام,اللطامنة,حماة,6,3,files/IMG_0106.JPG; files/IMG_0107.JPG; files/IMG_0108.JPG; files/IMG_0109.JPG; files/IMG_0112.JPG; 
+187,393,مسجد سعد بن معاذ,اللطامنة,حماة,6,3,files/IMG_0106.JPG; files/IMG_0107.JPG; files/IMG_0108.JPG; files/IMG_0109.JPG; files/IMG_0112.JPG; 
+187,394,مسجد عمر بن الخطاب,الجيسات,حماة,6,3,files/IMG_0106.JPG; files/IMG_0107.JPG; files/IMG_0108.JPG; files/IMG_0109.JPG; files/IMG_0112.JPG; 
+200,414,مسجد القسطل الشمالي,حماة,حماة,6,7,files/IMG-20250820-WA0085.jpg; files/IMG-20250820-WA0088.jpg; files/IMG-20250826-WA0012.jpg; files/I
+200,415,مسجد ابو كهف,حماة,حماة,6,7,files/IMG-20250820-WA0085.jpg; files/IMG-20250820-WA0088.jpg; files/IMG-20250826-WA0012.jpg; files/I
+200,416,مسجد ابو شويحة,حماة,حماة,6,7,files/IMG-20250820-WA0085.jpg; files/IMG-20250820-WA0088.jpg; files/IMG-20250826-WA0012.jpg; files/I
+200,417,مسجد بلال الحبشي,حماة,حماة,6,7,files/IMG-20250820-WA0085.jpg; files/IMG-20250820-WA0088.jpg; files/IMG-20250826-WA0012.jpg; files/I
+200,418,مسجد ام توينة,حماة,حماة,6,7,files/IMG-20250820-WA0085.jpg; files/IMG-20250820-WA0088.jpg; files/IMG-20250826-WA0012.jpg; files/I
+200,419,مسجد جديدة,حماة,حماة,6,7,files/IMG-20250820-WA0085.jpg; files/IMG-20250820-WA0088.jpg; files/IMG-20250826-WA0012.jpg; files/I
+200,420,مسجد عبيان,حماة,حماة,6,7,files/IMG-20250820-WA0085.jpg; files/IMG-20250820-WA0088.jpg; files/IMG-20250826-WA0012.jpg; files/I
+263,501,مسجد التكية في خان شيخون,غير معروف,غير معروف,16,2,files/IMG_6733 (1).JPG; files/IMG_6719 (1).JPG; files/IMG_6731.JPG; files/IMG_6727.JPG; files/IMG_67
+263,502,المسجد الأموي بالمعرة,المعرة,غير معروف,16,2,files/IMG_6733 (1).JPG; files/IMG_6719 (1).JPG; files/IMG_6731.JPG; files/IMG_6727.JPG; files/IMG_67
